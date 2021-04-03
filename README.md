@@ -1,11 +1,7 @@
-# JAVA_study
-
 ```java
-public static Main
-{
-  public static void main(String [] args)
-  {
-  
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
   }
 }
 ```
