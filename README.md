@@ -12,7 +12,9 @@ public class Main {   <--- Main은 xxx.java의 파일 명과 같아야한다. Ma
 # java의 데이터 타입
 
 문자열은 기본타입이 아니다.
+
 String 클래스로 문자열 표현한다
+
 ```java
 String Name = "LJH";
 Name +1.8   --> "LJH1.8"
@@ -20,33 +22,37 @@ Name +1.8   --> "LJH1.8"
 System.out.println(Name + "이정호"); --> "LJH이정호" 
 ```
 # 논리 타입
-
+```java
 c++에선 bool로 선언했지만 java는 boolean으로 선언
 boolean a = true;
 boolean b = 10 > 0;   --> 참임으로 true;
 boolean c = 1;    <-- 안된다. 타입이 일치 하지 않는다. C++과 달리 java는 1,0을 참,거짓으로 사용 못함
-
+```
 # 상수 선언
+```java
 C++ -> const
 java -> final
 
 final int a = 1;
 //static으로 선언하는 것이 바람직
 static final int a = 1;
+```
 
 # var키워드
+```java
 java 10 부터 도임
 C++의 auto같은거
 타입 생략하고 변수 선언이 가능
 컴파일러가 추론하여 변수 타입 결정
 //////변수 선언 시 초깃값이 주어지지 않으면 컴파일 오류///////
 ////var는 지역변수 선언만 가능////
-
+```
 # 자바의 입력과 출력
-
+```java
 System.out.println()    ---> 개행기능이 있음
 System.out.print()      ---> 개행 없음
 Scanner 클래스 --> 읽은 바이트를 문자,정수,실수,불린,문자열 등 다양한 타입으로 변환하여 리턴 
+```
 ```java
 
 //키보드에 연결된 System.in에게 키를 읽게 하고 원하는 타입으로 변환하여 리턴
