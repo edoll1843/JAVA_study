@@ -322,3 +322,30 @@ person p = new Student("이정호"); // 업캐스팅
 student s = (student)p; // 다운캐스팅, 강제 타입 변환
 
 ```
+
+# 래퍼클래스(Wrapper Class)
+
+자바의 자료형은 기본타입, 참조타입으로 나뉜다.
+기본 타입 : char, int, double 등등
+참조 타입 : class, interface 등등
+기본 타입의 데이터를 객체로 표현해야 하는 경우가 있다.
+기본 자료타입을 객체로 다루기 위해서 사용하는 클래스들을 Wrapper class라고한다.
+자바는 모든 기본타입은 값을 갖는 객체를 생성 할 수 있다.
+이런 객체를 포장 객체라고도 한다. 그 이유는 기본 타입의 값을 내부에 두고 포장하기 때문
+래퍼클래스로 감싸고 있는 기본 타입 값은 외부에서 변경 할 수 없다. 하고싶다면 새로운 포장객체를 만들어야한다.
+```java
+기본타입  래퍼클래스(Wrapper class)
+byte  ---> Byte
+char  ---> Character
+int   ---> Integer
+float ---> Float
+double---> Double
+boolean---> Boolean
+long  ---> Long
+short ---> Short
+```
+기본 타입의 값을 포장 하는 걸 박싱(boxing) 반대로 포장객체에서 기본타입의 값을 얻어내는걸 unboxing이라고함
+```java
+Integer num = 18; // 자동 박싱
+int n = num;      // 자동 언박싱
+```
